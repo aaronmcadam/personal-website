@@ -10,8 +10,11 @@ import {
 import type { NextPage } from "next";
 import Head from "next/head";
 import * as React from "react";
+import { useLayout } from "../src/hooks/useLayout";
 
 const Home: NextPage = () => {
+  const { isDesktop } = useLayout();
+
   return (
     <Box>
       <Head>
@@ -65,16 +68,18 @@ const Home: NextPage = () => {
           </Text>
         </Box>
       </Box>
-      <Avatar
-        src="/me.jpg"
-        size="3xl"
-        showBorder={true}
-        borderWidth="10px"
-        borderColor="sky.600"
-        pos="fixed"
-        bottom="-80px"
-        right="-80px"
-      />
+      {isDesktop ? (
+        <Avatar
+          src="/me.jpg"
+          size="3xl"
+          showBorder={true}
+          borderWidth="10px"
+          borderColor="sky.600"
+          pos="fixed"
+          bottom="-80px"
+          right="-80px"
+        />
+      ) : null}
     </Box>
   );
 };
