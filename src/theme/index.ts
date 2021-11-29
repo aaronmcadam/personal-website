@@ -16,6 +16,13 @@ export const theme = extendTheme(
     },
     colors: colors,
     breakpoints: breakpoints,
+    styles: {
+      global: {
+        body: {
+          bg: "gray.100",
+        },
+      },
+    },
   },
   withDefaultVariant({
     variant: "secondary",
