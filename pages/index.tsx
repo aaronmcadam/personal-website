@@ -1,12 +1,4 @@
-import {
-  Box,
-  Heading,
-  Text,
-  HStack,
-  Link,
-  Avatar,
-  Stack,
-} from "@chakra-ui/react";
+import { Avatar, Box, Heading, Stack, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import * as React from "react";
@@ -22,7 +14,13 @@ const Home: NextPage = () => {
         <meta name="description" content="Crafting delightful products" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box as="main" maxW="7xl" mx="auto" px={4} mt={16}>
+      <Box
+        as="main"
+        maxW="7xl"
+        mx="auto"
+        px={{ base: 4, sm: 6, lg: 8 }}
+        mt={16}
+      >
         <Heading
           fontSize={{ base: "5xl", sm: "6xl" }}
           fontWeight="extrabold"
@@ -71,6 +69,8 @@ const Home: NextPage = () => {
       {isDesktop ? (
         <Avatar
           src="/me.jpg"
+          ignoreFallback={true}
+          loading="eager"
           size="3xl"
           showBorder={true}
           borderWidth="10px"
