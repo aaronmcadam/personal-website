@@ -1,0 +1,11 @@
+@import url("https://use.typekit.net/kdl4qzn.css");
+
+@font-face {
+  font-family: "Cartridge";
+  src: url("/assets/fonts/Cartridge-Regular.ttf");
+  src: url("/assets/fonts/Cartridge-Regular.woff");
+  src: url("/assets/fonts/Cartridge-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

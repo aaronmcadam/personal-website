@@ -1,85 +1,36 @@
+import { About } from "@/components/about";
+import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { Loves } from "@/components/loves";
+import { Nav } from "@/components/nav";
+import { Posts } from "@/components/posts";
+import { FletcherQuote } from "@/components/quotes/fletcher-quote";
+import { PicassoQuote } from "@/components/quotes/picasso-quote";
 import { Avatar, Box, Heading, Stack, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import * as React from "react";
-import { useLayout } from "../src/hooks/useLayout";
 
 const Home: NextPage = () => {
-  const { isDesktop } = useLayout();
-
   return (
     <Box>
       <Head>
-        <title>Aaron McAdam</title>
+        <title>Aaron McAdam · Design Technologist</title>
         <meta name="description" content="Crafting delightful products" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box
-        as="main"
-        maxW="7xl"
-        mx="auto"
-        px={{ base: 4, sm: 6, lg: 8 }}
-        mt={16}
-      >
-        <Heading
-          fontSize={{ base: "5xl", sm: "6xl" }}
-          fontWeight="extrabold"
-          letterSpacing="tight"
-          color="sky.800"
-        >
-          Aaron McAdam
-        </Heading>
-        <Stack
-          direction={{ base: "column", lg: "row" }}
-          divider={
-            <Text display={{ base: "none", lg: "inline" }} px={2}>
-              &middot;
-            </Text>
-          }
-          color="gray.500"
-          fontSize={{ base: "2xl", sm: "3xl" }}
-          fontWeight="medium"
-          letterSpacing="tight"
-          mt={4}
-        >
-          <Text>💻 Product Engineer</Text>
-          <Text>🎨 Design Technologist</Text>
-          <Text>✍ Typography Nerd</Text>
-        </Stack>
-        <Box mt={16} maxW="xl" fontSize={{ base: "lg", sm: "2xl" }}>
-          <Heading
-            fontSize={{ base: "3xl", sm: "4xl" }}
-            fontWeight="extrabold"
-            letterSpacing="tight"
-          >
-            Crafting delightful products
-          </Heading>
-          <Text mt={6}>
-            👋 I’m Aaron, and I’m passionate about building great products. I
-            care as much about typography as I do about TypeScript—my skills
-            stretch across design and engineering.
-          </Text>
-          <Text mt={2}>
-            I’m always trying to find ways to make more of an impact by
-            constantly learning new things. I’m also a collaborator member at
-            Chakra UI.
-          </Text>
-        </Box>
+      <Box as="main">
+        <Nav />
+        <Hero />
+        <About />
+        {/* <Loves />
+        <FletcherQuote />
+        <Posts />
+        <PicassoQuote /> */}
       </Box>
-      {isDesktop ? (
-        <Avatar
-          src="/me.jpg"
-          ignoreFallback={true}
-          loading="eager"
-          size="3xl"
-          showBorder={true}
-          borderWidth="10px"
-          borderColor="sky.600"
-          pos="fixed"
-          bottom="-80px"
-          right="-80px"
-        />
-      ) : null}
+      <Box as="footer">
+        <Footer />
+      </Box>
     </Box>
   );
 };

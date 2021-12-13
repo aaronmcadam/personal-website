@@ -1,4 +1,9 @@
-import { extendTheme, ThemeConfig, withDefaultVariant } from "@chakra-ui/react";
+import {
+  extendTheme,
+  ThemeConfig,
+  withDefaultVariant,
+  theme as base,
+} from "@chakra-ui/react";
 import { breakpoints } from "./breakpoints";
 import { colors } from "./colors";
 import { Button } from "./components/button";
@@ -12,14 +17,23 @@ export const theme = extendTheme(
   {
     config,
     components: {
-      Button: Button,
+      Button,
     },
     colors: colors,
     breakpoints: breakpoints,
+    fonts: {
+      heading: `"Cartridge", ${base.fonts.heading}`,
+      body: "minion-3, serif;",
+    },
     styles: {
       global: {
+        "::selection": {
+          bg: "orange.600",
+        },
         body: {
-          bg: "gray.100",
+          bg: "indigo.900",
+          bgGradient: "linear(to-r, purple.600 10%, indigo.900 90%)",
+          color: "white",
         },
       },
     },
