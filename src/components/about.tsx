@@ -5,10 +5,10 @@ export function About() {
     <Box
       maxW="7xl"
       mx="auto"
-      px={{ base: 4, sm: 6, lg: 8 }}
+      px={{ base: 4, sm: 6, lg: 8, xl: 20 }}
       mt={{ base: 12, sm: 24 }}
     >
-      <SimpleGrid columns={{ base: 1, xl: 12 }} spacing={12}>
+      <Stack spacing={12} maxW="5xl">
         <Box gridColumn="span 7">
           <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
             😃 What I do
@@ -87,7 +87,7 @@ export function About() {
             </Link>
           </SimpleGrid>
         </Box>
-      </SimpleGrid>
+      </Stack>
     </Box>
   );
 }

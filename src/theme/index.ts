@@ -21,7 +21,7 @@ export const theme = extendTheme(
       Link: {
         baseStyle: {
           textDecoration: "underline",
-          fontWeight: "medium",
+          fontWeight: "semibold",
           color: "orange.500",
         },
       },

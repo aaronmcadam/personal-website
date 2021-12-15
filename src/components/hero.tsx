@@ -5,7 +5,7 @@ export function Hero() {
     <Box
       maxW="7xl"
       mx="auto"
-      px={{ base: 4, sm: 6, lg: 8 }}
+      px={{ base: 4, sm: 6, lg: 8, xl: 20 }}
       mt={{ base: 8, sm: 16 }}
     >
       <Stack direction={{ base: "column-reverse", sm: "row" }} spacing={10}>
