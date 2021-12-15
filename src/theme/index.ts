@@ -18,12 +18,19 @@ export const theme = extendTheme(
     config,
     components: {
       Button,
+      Link: {
+        baseStyle: {
+          textDecoration: "underline",
+          fontWeight: "medium",
+          color: "orange.500",
+        },
+      },
     },
     colors: colors,
     breakpoints: breakpoints,
     fonts: {
       heading: `"Cartridge", ${base.fonts.heading}`,
-      body: "minion-3, serif;",
+      body: "minion-3, serif",
     },
     styles: {
       global: {
@@ -32,7 +39,7 @@ export const theme = extendTheme(
         },
         body: {
           bg: "indigo.900",
-          bgGradient: "linear(to-r, purple.600 10%, indigo.900 90%)",
+          bgGradient: "linear(to-r, purple.900, indigo.900)",
           color: "white",
         },
       },

@@ -2,11 +2,16 @@ import { Box, Heading, SimpleGrid, Stack, Text, Link } from "@chakra-ui/react";
 
 export function About() {
   return (
-    <Box maxW="7xl" mx="auto" px={{ base: 4, sm: 6, lg: 8 }} mt={24}>
-      <SimpleGrid columns={12} spacing={12}>
+    <Box
+      maxW="7xl"
+      mx="auto"
+      px={{ base: 4, sm: 6, lg: 8 }}
+      mt={{ base: 12, sm: 24 }}
+    >
+      <SimpleGrid columns={{ base: 1, sm: 12 }} spacing={12}>
         <Box gridColumn="span 7">
-          <Heading>😃 What I do</Heading>
-          <Text fontSize="2xl" mt={4}>
+          <Heading fontSize={{ base: "2xl", sm: "3xl" }}>😃 What I do</Heading>
+          <Text fontSize={{ base: "xl", sm: "2xl" }} mt={4}>
             I’m a Senior Product Engineer at{" "}
             <Link
               href="https://www.craft.do"
@@ -28,8 +33,10 @@ export function About() {
             Design Systems and scalable architectures.
           </Text>
         </Box>
-        <Box gridColumn="span 5" fontSize="2xl">
-          <Heading>👀 Where to find me</Heading>
+        <Box gridColumn="span 5" fontSize={{ base: "xl", sm: "2xl" }}>
+          <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
+            👀 Where to find me
+          </Heading>
           <SimpleGrid columns={2} mt={4}>
             <Text>Designing on...</Text>
             <Link

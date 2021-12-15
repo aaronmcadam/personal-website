@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <Box
-      py={{ base: 6, md: 12 }}
+      py={{ base: 6, sm: 12 }}
       px={{ base: 4, sm: 6, lg: 8 }}
       maxW="7xl"
       mx="auto"
@@ -29,14 +29,14 @@ export function Footer() {
             rel="noopener noreferrer"
             variant="ghost"
             _hover={{
-              bg: "gray.50",
+              bg: "transparent",
             }}
             icon={
               <Icon
                 as={SiTwitter}
                 boxSize={6}
-                color="gray.400"
-                _hover={{ color: "gray.500" }}
+                color="purple.300"
+                _hover={{ color: "purple.400" }}
               />
             }
           />
@@ -48,14 +48,14 @@ export function Footer() {
             rel="noopener noreferrer"
             variant="ghost"
             _hover={{
-              bg: "gray.50",
+              bg: "transparent",
             }}
             icon={
               <Icon
                 as={SiGithub}
                 boxSize={6}
-                color="gray.400"
-                _hover={{ color: "gray.500" }}
+                color="purple.300"
+                _hover={{ color: "purple.400" }}
               />
             }
           />

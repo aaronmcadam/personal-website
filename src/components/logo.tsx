@@ -13,11 +13,11 @@ export function Logo() {
     <HStack spacing={3}>
       <Avatar
         src="/me.jpg"
-        size="lg"
+        boxSize={{ base: 10, sm: 16 }}
         borderWidth="3px"
         borderColor="orange.600"
       />
-      <Heading as="h1" fontSize="4xl">
+      <Heading as="h1" fontSize={{ base: "2xl", sm: "4xl" }}>
         <Box
           as="span"
           css={{

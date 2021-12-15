@@ -18,6 +18,24 @@ const Home: NextPage = () => {
         <title>Aaron McAdam · Design Technologist</title>
         <meta name="description" content="Crafting delightful products" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/assets/fonts/Cartridge-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/assets/fonts/Cartridge-Regular.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/assets/fonts/Cartridge-Regular.woff2"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <Box as="main">
         <Nav />
