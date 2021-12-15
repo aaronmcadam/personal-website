@@ -8,10 +8,15 @@ export function About() {
       px={{ base: 4, sm: 6, lg: 8 }}
       mt={{ base: 12, sm: 24 }}
     >
-      <SimpleGrid columns={{ base: 1, md: 12 }} spacing={12}>
+      <SimpleGrid columns={{ base: 1, xl: 12 }} spacing={12}>
         <Box gridColumn="span 7">
-          <Heading fontSize={{ base: "2xl", sm: "3xl" }}>😃 What I do</Heading>
-          <Text fontSize={{ base: "md", sm: "xl" }} mt={4}>
+          <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
+            😃 What I do
+          </Heading>
+          <Text
+            fontSize={{ base: "md", sm: "xl", md: "2xl", lg: "3xl" }}
+            mt={4}
+          >
             I’m a Senior Product Engineer at{" "}
             <Link
               href="https://www.craft.do"
@@ -34,8 +39,11 @@ export function About() {
             Design Systems and scalable architectures.
           </Text>
         </Box>
-        <Box gridColumn="span 5" fontSize={{ base: "md", sm: "xl" }}>
-          <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
+        <Box
+          gridColumn="span 5"
+          fontSize={{ base: "md", sm: "xl", md: "2xl", lg: "3xl" }}
+        >
+          <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
             👀 Where to find me
           </Heading>
           <SimpleGrid columns={2} mt={4}>

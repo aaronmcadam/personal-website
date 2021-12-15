@@ -18,7 +18,7 @@ export function Nav() {
       maxW="7xl"
       mx="auto"
       px={{ base: 4, sm: 6, lg: 8 }}
-      py={10}
+      py={{ base: 4, sm: 6, lg: 8 }}
     >
       <Logo />
       {/* <HStack spacing={6} fontSize="2xl">
