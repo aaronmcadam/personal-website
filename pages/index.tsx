@@ -1,12 +1,8 @@
 import { About } from "@/components/about";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
-import { Loves } from "@/components/loves";
 import { Nav } from "@/components/nav";
-import { Posts } from "@/components/posts";
-import { FletcherQuote } from "@/components/quotes/fletcher-quote";
-import { PicassoQuote } from "@/components/quotes/picasso-quote";
-import { Avatar, Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import * as React from "react";
@@ -37,9 +33,19 @@ const Home: NextPage = () => {
           crossOrigin=""
         />
       </Head>
-      <Box as="main">
-        <Nav />
-        <Hero />
+      <Box as="main" pos="relative">
+        <Box h="full">
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg.svg"
+            pos="absolute"
+            top={{ base: "32px", sm: "64px", lg: 0 }}
+            zIndex="hide"
+          />
+          <Nav />
+          <Hero />
+        </Box>
         <About />
         {/* <Loves />
         <FletcherQuote />

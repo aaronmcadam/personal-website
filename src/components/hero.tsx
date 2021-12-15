@@ -50,6 +50,7 @@ export function Hero() {
             Typography Nerd
           </Heading>
           <Text
+            filter="drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5))"
             fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
             color="white"
             mt={8}
@@ -60,7 +61,7 @@ export function Hero() {
           </Text>
         </Box>
         <Avatar
-          src="/me.jpg"
+          src="/assets/images/me.jpg"
           boxSize={{ base: 32, sm: 48, md: 56, lg: "300px" }}
           borderWidth={{ base: "4px", sm: "10px" }}
           borderColor="orange.600"

@@ -6,7 +6,7 @@ export function About() {
       maxW="7xl"
       mx="auto"
       px={{ base: 4, sm: 6, lg: 8, xl: 20 }}
-      mt={{ base: 12, sm: 24 }}
+      mt={{ base: 12, sm: 24, xl: 48, "2xl": 64 }}
     >
       <Stack spacing={12} maxW="5xl">
         <Box gridColumn="span 7">
