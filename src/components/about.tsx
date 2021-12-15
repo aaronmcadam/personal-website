@@ -8,10 +8,10 @@ export function About() {
       px={{ base: 4, sm: 6, lg: 8 }}
       mt={{ base: 12, sm: 24 }}
     >
-      <SimpleGrid columns={{ base: 1, sm: 12 }} spacing={12}>
+      <SimpleGrid columns={{ base: 1, md: 12 }} spacing={12}>
         <Box gridColumn="span 7">
           <Heading fontSize={{ base: "2xl", sm: "3xl" }}>😃 What I do</Heading>
-          <Text fontSize={{ base: "xl", sm: "2xl" }} mt={4}>
+          <Text fontSize={{ base: "md", sm: "xl" }} mt={4}>
             I’m a Senior Product Engineer at{" "}
             <Link
               href="https://www.craft.do"
@@ -20,8 +20,9 @@ export function About() {
             >
               Craft
             </Link>
-            , helping our customers capture incredible notes and write beautiful
-            documents. I also work on documentation and Developer Relations for{" "}
+            , helping our customers capture incredible notes and create
+            beautiful documents. I also work on documentation and Developer
+            Relations for{" "}
             <Link
               href="https://chakra-ui.com"
               target="_blank"
@@ -33,7 +34,7 @@ export function About() {
             Design Systems and scalable architectures.
           </Text>
         </Box>
-        <Box gridColumn="span 5" fontSize={{ base: "xl", sm: "2xl" }}>
+        <Box gridColumn="span 5" fontSize={{ base: "md", sm: "xl" }}>
           <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
             👀 Where to find me
           </Heading>
