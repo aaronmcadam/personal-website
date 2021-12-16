@@ -1,4 +1,15 @@
-import { Box, Heading, SimpleGrid, Stack, Text, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  HStack,
+  Icon,
+  Link,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import { ArrowUpRightIcon } from "@iconicicons/react";
+import { SiDiscord, SiFigma, SiGithub, SiTwitter } from "react-icons/si";
 
 export function About() {
   return (
@@ -52,46 +63,98 @@ export function About() {
           >
             👀 Where to find me
           </Heading>
-          <SimpleGrid columns={2} mt={4}>
-            <Text>Designing on...</Text>
-            <Link
-              href="https://www.figma.com/@aaronmcadam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Figma
-            </Link>
-          </SimpleGrid>
-          <SimpleGrid columns={2}>
-            <Text>Hacking on...</Text>
-            <Link
-              href="https://github.com/aaronmcadam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </Link>
-          </SimpleGrid>
-          <SimpleGrid columns={2}>
-            <Text>Tweeting on...</Text>
-            <Link
-              href="https://twitter.com/aaronmcadam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </Link>
-          </SimpleGrid>
-          <SimpleGrid columns={2}>
-            <Text>Chatting on...</Text>
-            <Link
-              href="https://discord.gg/chakra-ui"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Discord
-            </Link>
-          </SimpleGrid>
+          <HStack spacing={0}>
+            <Text>Designing on</Text>
+            <Box>
+              <Button
+                as="a"
+                href="https://www.figma.com/@aaronmcadam"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="ghost"
+                leftIcon={<Icon as={SiFigma} boxSize={6} color="purple.200" />}
+                rightIcon={
+                  <Icon as={ArrowUpRightIcon} boxSize={6} color="purple.400" />
+                }
+                fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+                _hover={{
+                  bg: "purple.800",
+                }}
+              >
+                Figma
+              </Button>
+            </Box>
+          </HStack>
+          <HStack spacing={0}>
+            <Text>Hacking on</Text>
+            <Box>
+              <Button
+                as="a"
+                href="https://github.com/aaronmcadam"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="ghost"
+                leftIcon={<Icon as={SiGithub} boxSize={6} color="purple.200" />}
+                rightIcon={
+                  <Icon as={ArrowUpRightIcon} boxSize={6} color="purple.400" />
+                }
+                fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+                _hover={{
+                  bg: "purple.800",
+                }}
+              >
+                GitHub
+              </Button>
+            </Box>
+          </HStack>
+          <HStack spacing={0}>
+            <Text>Tweeting on</Text>
+            <Box>
+              <Button
+                as="a"
+                href="https://twitter.com/aaronmcadam"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="ghost"
+                leftIcon={
+                  <Icon as={SiTwitter} boxSize={6} color="purple.200" />
+                }
+                rightIcon={
+                  <Icon as={ArrowUpRightIcon} boxSize={6} color="purple.400" />
+                }
+                fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+                _hover={{
+                  bg: "purple.800",
+                }}
+              >
+                Twitter
+              </Button>
+            </Box>
+          </HStack>
+          <HStack spacing={0}>
+            <Text>Chatting on</Text>
+            <Box>
+              <Button
+                as="a"
+                href="https://twitter.com/aaronmcadam"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="ghost"
+                leftIcon={
+                  <Icon as={SiDiscord} boxSize={6} color="purple.200" />
+                }
+                rightIcon={
+                  <Icon as={ArrowUpRightIcon} boxSize={6} color="purple.400" />
+                }
+                fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+                _hover={{
+                  bg: "purple.800",
+                }}
+              >
+                Discord
+              </Button>
+            </Box>
+          </HStack>
         </Box>
       </Stack>
     </Box>
