@@ -33,46 +33,48 @@ const Home: NextPage = () => {
           crossOrigin=""
         />
       </Head>
-      <Box as="main" pos="relative">
-        <Box pos="absolute" zIndex="hide" opacity={0.7}>
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/1.svg"
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/2.svg"
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/3.svg"
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/4.svg"
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/3.svg"
-            display={{ sm: "none" }}
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/2.svg"
-            display={{ sm: "none" }}
-          />
-          <Image
-            aria-hidden="true"
-            alt="pattern background"
-            src="/assets/images/bg/full/1.svg"
-            display={{ sm: "none" }}
-          />
+      <Box as="main">
+        <Box maxW="8xl" mx="auto" pos="relative">
+          <Box pos="absolute" zIndex="hide" opacity={0.7}>
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/1.svg"
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/2.svg"
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/3.svg"
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/4.svg"
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/3.svg"
+              display={{ sm: "none" }}
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/2.svg"
+              display={{ sm: "none" }}
+            />
+            <Image
+              aria-hidden="true"
+              alt="pattern background"
+              src="/assets/images/bg/full/1.svg"
+              display={{ sm: "none" }}
+            />
+          </Box>
         </Box>
         <Nav />
         <Hero />
