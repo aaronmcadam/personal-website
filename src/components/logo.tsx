@@ -12,7 +12,7 @@ export function Logo() {
   return (
     <HStack spacing={3}>
       <Avatar
-        src="/me.jpg"
+        src="/assets/images/me.jpg"
         boxSize={{ base: 10, sm: 16 }}
         borderWidth="3px"
         borderColor="orange.600"

@@ -14,7 +14,7 @@ export function About() {
             😃 What I do
           </Heading>
           <Text
-            fontSize={{ base: "md", sm: "xl", md: "2xl", lg: "3xl" }}
+            fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
             mt={4}
           >
             I’m a Senior Product Engineer at{" "}
@@ -41,7 +41,7 @@ export function About() {
         </Box>
         <Box
           gridColumn="span 5"
-          fontSize={{ base: "md", sm: "xl", md: "2xl", lg: "3xl" }}
+          fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
         >
           <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
             👀 Where to find me
