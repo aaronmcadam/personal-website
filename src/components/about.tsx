@@ -6,11 +6,14 @@ export function About() {
       maxW="7xl"
       mx="auto"
       px={{ base: 4, sm: 6, lg: 8, xl: 20 }}
-      mt={{ base: 12, sm: 24, xl: 48, "2xl": 64 }}
+      mt={{ base: 12, sm: 24 }}
     >
       <Stack spacing={12} maxW="5xl">
         <Box gridColumn="span 7">
-          <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
+          <Heading
+            fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
+          >
             😃 What I do
           </Heading>
           <Text
@@ -43,7 +46,10 @@ export function About() {
           gridColumn="span 5"
           fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
         >
-          <Heading fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}>
+          <Heading
+            fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
+          >
             👀 Where to find me
           </Heading>
           <SimpleGrid columns={2} mt={4}>

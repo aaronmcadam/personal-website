@@ -14,6 +14,7 @@ export function Hero() {
             fontSize={{ base: "4xl", sm: "5xl", md: "6xl", lg: "7xl" }}
             fontWeight="bold"
             color="white"
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
           >
             <Box
               as="span"
@@ -30,6 +31,7 @@ export function Hero() {
             fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
             fontWeight="bold"
             color="orange.600"
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
           >
             Design Technologist
           </Heading>
@@ -38,6 +40,7 @@ export function Hero() {
             fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
             fontWeight="bold"
             color="orange.500"
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
           >
             Product Engineer
           </Heading>
@@ -46,6 +49,7 @@ export function Hero() {
             fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
             fontWeight="bold"
             color="yellow.500"
+            filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
           >
             Typography Nerd
           </Heading>

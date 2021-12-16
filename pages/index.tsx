@@ -59,19 +59,19 @@ const Home: NextPage = () => {
             aria-hidden="true"
             alt="pattern background"
             src="/assets/images/bg/full/3.svg"
-            display={{ md: "none" }}
+            display={{ sm: "none" }}
           />
           <Image
             aria-hidden="true"
             alt="pattern background"
             src="/assets/images/bg/full/2.svg"
-            display={{ md: "none" }}
+            display={{ sm: "none" }}
           />
           <Image
             aria-hidden="true"
             alt="pattern background"
             src="/assets/images/bg/full/1.svg"
-            display={{ md: "none" }}
+            display={{ sm: "none" }}
           />
         </Box>
         <Nav />
