@@ -34,18 +34,48 @@ const Home: NextPage = () => {
         />
       </Head>
       <Box as="main" pos="relative">
-        <Box h="full">
+        <Box pos="absolute" zIndex="hide" opacity={0.7}>
           <Image
             aria-hidden="true"
             alt="pattern background"
-            src="/assets/images/bg.svg"
-            pos="absolute"
-            top={{ base: "32px", sm: "64px", lg: 0 }}
-            zIndex="hide"
+            src="/assets/images/bg/full/1.svg"
           />
-          <Nav />
-          <Hero />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/2.svg"
+          />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/3.svg"
+          />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/4.svg"
+          />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/3.svg"
+            display={{ md: "none" }}
+          />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/2.svg"
+            display={{ md: "none" }}
+          />
+          <Image
+            aria-hidden="true"
+            alt="pattern background"
+            src="/assets/images/bg/full/1.svg"
+            display={{ md: "none" }}
+          />
         </Box>
+        <Nav />
+        <Hero />
         <About />
         {/* <Loves />
         <FletcherQuote />
