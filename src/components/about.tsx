@@ -63,7 +63,7 @@ export function About() {
           >
             👀 Where to find me
           </Heading>
-          <HStack spacing={0}>
+          <HStack spacing={0} mt={4}>
             <Text>Designing on</Text>
             <Box>
               <Button
