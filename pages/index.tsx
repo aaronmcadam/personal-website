@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Loves } from "@/components/loves";
 import { Nav } from "@/components/nav";
+import { FletcherQuote } from "@/components/quotes/fletcher-quote";
 import { Box, Image } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -81,8 +82,8 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Loves />
-        {/*
         <FletcherQuote />
+        {/*
         <Posts />
         <PicassoQuote /> */}
       </Box>
