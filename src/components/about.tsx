@@ -20,7 +20,7 @@ export function About() {
       mt={{ base: 12, sm: 24 }}
     >
       <Stack spacing={12} maxW="5xl">
-        <Box gridColumn="span 7">
+        <Box>
           <Heading
             fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
             filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
@@ -53,10 +53,7 @@ export function About() {
             Design Systems and scalable architectures.
           </Text>
         </Box>
-        <Box
-          gridColumn="span 5"
-          fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
-        >
+        <Box fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}>
           <Heading
             fontSize={{ base: "2xl", sm: "3xl", md: "4xl", lg: "5xl" }}
             filter="drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))"
