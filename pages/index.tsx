@@ -1,6 +1,7 @@
 import { About } from "@/components/about";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import { Loves } from "@/components/loves";
 import { Nav } from "@/components/nav";
 import { Box, Image } from "@chakra-ui/react";
 import type { NextPage } from "next";
@@ -39,39 +40,39 @@ const Home: NextPage = () => {
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/1.svg"
+              src="/assets/images/bg/confetti/1.svg"
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/2.svg"
+              src="/assets/images/bg/confetti/2.svg"
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/3.svg"
+              src="/assets/images/bg/confetti/3.svg"
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/4.svg"
+              src="/assets/images/bg/confetti/4.svg"
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/3.svg"
+              src="/assets/images/bg/confetti/3.svg"
               display={{ sm: "none" }}
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/2.svg"
+              src="/assets/images/bg/confetti/2.svg"
               display={{ sm: "none" }}
             />
             <Image
               aria-hidden="true"
               alt="pattern background"
-              src="/assets/images/bg/full/1.svg"
+              src="/assets/images/bg/confetti/1.svg"
               display={{ sm: "none" }}
             />
           </Box>
@@ -79,7 +80,8 @@ const Home: NextPage = () => {
         <Nav />
         <Hero />
         <About />
-        {/* <Loves />
+        <Loves />
+        {/*
         <FletcherQuote />
         <Posts />
         <PicassoQuote /> */}
