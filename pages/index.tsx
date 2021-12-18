@@ -4,10 +4,11 @@ import { Hero } from "@/components/hero";
 import { Loves } from "@/components/loves";
 import { Nav } from "@/components/nav";
 import { FletcherQuote } from "@/components/quotes/fletcher-quote";
-import { Box, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import * as React from "react";
+import { ConfettiBackground } from "./../src/components/backgrounds/confetti-background";
 
 const Home: NextPage = () => {
   return (
@@ -36,48 +37,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Box as="main">
-        <Box maxW="8xl" mx="auto" pos="relative">
-          <Box pos="absolute" zIndex="hide" opacity={0.7}>
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/1.svg"
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/2.svg"
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/3.svg"
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/4.svg"
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/3.svg"
-              display={{ sm: "none" }}
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/2.svg"
-              display={{ sm: "none" }}
-            />
-            <Image
-              aria-hidden="true"
-              alt="pattern background"
-              src="/assets/images/bg/confetti/1.svg"
-              display={{ sm: "none" }}
-            />
-          </Box>
-        </Box>
+        <ConfettiBackground />
         <Nav />
         <Hero />
         <About />

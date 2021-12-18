@@ -76,9 +76,9 @@ export function Hero() {
         mt={8}
         pr={{ base: 0, sm: 16, md: 24, lg: 32, xl: 48 }}
       >
-        👋 I’m Aaron and I love building great products. I care as much about
-        typography as I do about TypeScript—my skills stretch across design and
-        engineering.
+        👋 I’m Aaron, and I love blending beautiful design and robust
+        engineering to create software that genuinely helps users get their job
+        done.
       </Text>
     </Box>
   );
