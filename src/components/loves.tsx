@@ -40,8 +40,8 @@ export function Loves() {
             bg="purple.100"
             color="purple.900"
           >
-            I’m into a lot of different stuff! Here’s a few of the things I
-            really enjoy:
+            I’m into a lot of different stuff! Here’s a few things I really
+            enjoy:
           </Text>
         </Stack>
         <SimpleGrid

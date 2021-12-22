@@ -133,7 +133,7 @@ export function About() {
             <Box>
               <Button
                 as="a"
-                href="https://twitter.com/aaronmcadam"
+                href="https://discord.gg/chakra-ui"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="ghost"
