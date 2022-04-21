@@ -31,17 +31,16 @@ export function About() {
             fontSize={{ base: "xl", sm: "2xl", md: "3xl", lg: "4xl" }}
             mt={4}
           >
-            I’m a Senior Product Engineer at{" "}
+            I’m a Lead Front End Engineer at{" "}
             <Link
-              href="https://www.craft.do"
+              href="http://ticketmaster.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Craft
+              Ticketmaster
             </Link>
-            , helping our customers capture incredible notes and create
-            beautiful documents. I also work on documentation and Developer
-            Relations for{" "}
+            , helping our fans pay for their tickets. I also work on
+            documentation and Developer Relations for{" "}
             <Link
               href="https://chakra-ui.com"
               target="_blank"
